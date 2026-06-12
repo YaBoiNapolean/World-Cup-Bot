@@ -1,21 +1,19 @@
 import datetime
 import asyncio
 import discord
-from discord import app_commandsfrom discord.ext import commands, tasks
+from discord import app_commands
+from discord.ext import commands, tasks
 import pytz
 import requests
 import os
 import json
 
-# ==================== CONFIGURATION ====================
 BOT_TOKEN = os.getenv("BOT_TOKEN")
 API_KEY = os.getenv("API_KEY")
 
-# API Configuration - API-Football 
 API_URL = "https://v3.football.api-sports.io/fixtures"
-CURRENT_WORLD_CUP_YEAR = "2026"  
-FIFA_LEAGUE_ID = "1"             
-# =======================================================
+CURRENT_WORLD_CUP_YEAR = "2026"
+FIFA_LEAGUE_ID = "1"
 
 API_HEADERS = {
     'x-rapidapi-key': API_KEY,
