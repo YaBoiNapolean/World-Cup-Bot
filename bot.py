@@ -151,7 +151,7 @@ async def set_timezone(interaction: discord.Interaction, tz_name: str):
         await interaction.response.send_message(f"✅ **Timezone updated to:** `{tz_name}`")
         await create_world_cup_events(interaction.guild)
     else:
-        await interaction.response.send_message(f"❌ `{tz_name}` is invalid.", ephemeral=True)
+        await interaction.response.send_message(f"❌ `{tz_name}` is invalid. Here is a list of all of the valid timezones: https://docs.google.com/document/d/1agvFSDUScWmEkvVKQ13YNUYRTC2FDnjNL65cDjSkVXU/edit?usp=sharing", ephemeral=True)
 
 @bot.tree.command(name="setpingrole", description="Set the role to ping when a World Cup game starts.")
 @app_commands.describe(role="The role to mention during announcements")
