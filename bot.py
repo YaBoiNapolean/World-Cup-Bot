@@ -15,14 +15,9 @@ API_URL = "https://v3.football.api-sports.io/fixtures"
 CURRENT_WORLD_CUP_YEAR = "2026"
 FIFA_LEAGUE_ID = "1"
 
-API_HEADERS = {
-    'x-rapidapi-key': API_KEY,
-    'x-rapidapi-host': 'v3.football.api-sports.io'
-}
-API_PARAMS = {
-    'league': FIFA_LEAGUE_ID,
-    'season': CURRENT_WORLD_CUP_YEAR
-}
+# Flattened to strictly prevent hidden web-formatting spaces
+API_HEADERS = {'x-rapidapi-key': API_KEY, 'x-rapidapi-host': 'v3.football.api-sports.io'}
+API_PARAMS = {'league': FIFA_LEAGUE_ID, 'season': CURRENT_WORLD_CUP_YEAR}
 
 intents = discord.Intents.default()
 intents.guilds = True
