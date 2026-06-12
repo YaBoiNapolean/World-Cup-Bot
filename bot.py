@@ -1,12 +1,11 @@
 import datetime
 import asyncio
 import discord
-from discord import app_commands
-from discord.ext import commands, tasks
+from discord import app_commandsfrom discord.ext import commands, tasks
 import pytz
 import requests
 import os
-import json  # Added to handle reading/writing settings to the volume
+import json
 
 # ==================== CONFIGURATION ====================
 BOT_TOKEN = os.getenv("BOT_TOKEN")
