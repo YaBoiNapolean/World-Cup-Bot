@@ -174,7 +174,7 @@ async def set_channel(interaction: discord.Interaction, channel: discord.TextCha
 @bot.tree.command(name="Test", description="Test to see if bot is functioning correctly.")
 @app_commands.describe(channel="Test to see if the bot is functioning correctly")
 async def test(interaction: discord.Interaction):
-        await interaction.response.send_message("Test command executed :)")
+   await interaction.response.send_message("Test command executed :)")
 
 @tasks.loop(minutes=1)
 async def check_live_matches():
